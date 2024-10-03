@@ -1,23 +1,40 @@
 // Iteration 1 | Find the Maximum
-function maxOfTwoNumbers() {}
+function maxOfTwoNumbers(num1, num2) {
+    // console.log(num1, num2)
 
-
-
+    if(num1 > num2) {
+        return num1
+    } else {
+        return num2
+    }
+}
 
 // Iteration 2 | Find the Longest Word
 const words = ["mystery", "brother", "aviator", "crocodile", "pearl", "orchard", "crackpot"];
 
-function findLongestWord() {}
-
-
-
+function findLongestWord(arr) {
+    if(arr.length === 0) {
+        return null
+    }
+    
+    let longestWord = ' ';
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i].length > longestWord.length) {
+            longestWord = arr[i];
+            console.log(arr[i]);
+        }
+    }
+    return longestWord
+}
 
 // Iteration 3 | Sum Numbers
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
-function sumNumbers() {}
-
-
+function sumNumbers() {
+    for(let i = 0; i < numbers.length; i++) {
+        sum += numbers[i]
+    }
+}
 
 
 // Iteration 4 | Numbers Average
@@ -32,3 +49,5 @@ function averageNumbers() {}
 const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", "truth", "disobedience"];
 
 function doesWordExist() {}
+
+// Primitive: string, number, boolean
