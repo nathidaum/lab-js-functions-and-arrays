@@ -33,7 +33,6 @@ function sumNumbers(arr) {
     let sum = 0; 
     if (arr.length === "1") {
         sum = arr[0];
-        console.log(sum)
     }
     
     for (let i = 0; i < arr.length; i++) {
@@ -47,8 +46,20 @@ function sumNumbers(arr) {
 // Iteration 4 | Numbers Average
 const numbers2 = [2, 6, 9, 10, 7, 4, 1, 9];
 
-function averageNumbers() {}
-
+function averageNumbers(arr) {
+    
+    let sum = 0; 
+    if(arr.length === 0) {
+        return 0
+    }
+    
+    for (let i = 0; i < arr.length; i++) {
+        if(typeof arr[i] === "number") {
+            sum += arr[i];
+        }
+    }
+    return sum / arr.length;
+}
 
 
 
@@ -56,5 +67,3 @@ function averageNumbers() {}
 const words2 = ["machine", "subset", "trouble", "starting", "matter", "eating", "truth", "disobedience"];
 
 function doesWordExist() {}
-
-// Primitive: string, number, boolean
